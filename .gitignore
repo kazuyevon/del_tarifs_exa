@@ -1,0 +1,6 @@
+# Python
+__pycache__/
+.venv/
+
+# Configuration et Secrets (Très important)
+config.data
