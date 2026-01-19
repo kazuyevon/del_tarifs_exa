@@ -1,8 +1,8 @@
 """
-Script de suppression de tarifs Exaprint
+Script de suppression de tarifs Atelier 12
 =========================================
 Ce script permet de supprimer automatiquement les tarifs associés à des produits
-Exaprint en fonction d'une référence de produit donnée.
+Atelier 12 en fonction d'une référence de produit donnée.
 
 Il utilise l'API de l'Imprimerie Européenne pour :
 1. Récupérer la liste des produits correspondant à une référence
@@ -45,7 +45,7 @@ nouvelle_reference = "BRCAL"
 # =============================================================================
 # RÉCUPÉRATION DES PRODUITS
 # =============================================================================
-# Construction de l'URL pour rechercher les produits Exaprint
+# Construction de l'URL pour rechercher les produits Atelier 12
 # - order=set_id : tri par identifiant de set
 # - search : filtre sur la référence
 url_product = f"https://api.imprimerie-europeenne.com/v1/workshop/exaprint-products?&order=set_id&search={nouvelle_reference}"
@@ -115,3 +115,4 @@ elif len(response_product.json()['data']) > 0:
                 else:
                     # Succès de la suppression - affichage d'un message de confirmation
                     print(f"Suppression ok : Produit : {set_id} et quantité : {quantity}")
+
