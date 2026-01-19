@@ -1,4 +1,4 @@
-# Automatisation API : Suppression Massive de Tarifs (Exaprint)
+# Automatisation API : Suppression Massive de Tarifs (Atelier 12)
 
 Ce script Python a été conçu pour résoudre une problématique concrète de gestion de catalogue dans le secteur de l'imprimerie. Il permet d'automatiser la suppression de tarifs obsolètes via l'API de l'Imprimerie Européenne.
 
